@@ -1,0 +1,292 @@
+
+#ap-body {
+    margin: 0;
+    background-color: rgb(177, 210, 210);
+  }
+  
+  .ap-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #f3e8ff, #e1f0ff);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .ap-navbar-logo {
+    display: flex;
+    justify-content: flex-start;
+   align-items: center;
+  }
+
+  .ap-navbar-logo{
+    position: relative;
+    right: 100px;
+  }
+  
+  .ap-navbar-logo img {
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .ap-navbar-logo a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .ap-navbar-links {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .ap-navbar-links a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #555;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .ap-navbar-links a:hover {
+    background: rgba(0, 0, 0, 0.1);
+    color: #000;
+  }
+  
+  
+  .ap-navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+    left: 110px;
+  }
+
+  @media (max-width: 1024px) {
+    .ap-navbar{
+      width: 985px;
+      align-items: center;
+    }
+    
+  
+    .ap-navbar-logo {
+      
+      position: relative;
+      left: -10px;
+    }
+  
+    .ap-navbar-links a {
+      font-size: 17px;
+      padding: 15px 8px; 
+    }
+  
+    .ap-navbar-links {
+      display: flex;
+      gap: 1px; 
+      position: relative;
+      right: 6px;
+    }
+  }
+
+  
+   
+  @media (max-width: 768px) {
+    .ap-navbar{
+      position: relative;
+      width: 748px;
+    }
+    .ap-navbar-links {
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background: #fff;
+      padding: 10px;
+      z-index: 1;
+      border-radius: 5px;
+      transform: translateY(-200%);
+      opacity: 0;
+      visibility: hidden;
+    }
+  
+    .ap-navbar-links.active {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .ap-navbar-logo{
+      position: relative;
+      left: -251px;
+    }
+  
+    .ap-navbar-toggle {
+      display: block;
+      position: relative;
+      left: -381px;
+
+    }
+  }
+  
+
+
+  
+  
+@media (max-width: 480px) {
+  .ap-navbar{
+    position: relative;
+    width: 400px;
+  }
+
+  .ap-navbar-toggle {
+    display: block;
+    position: relative;
+    left: -234px;
+
+  }
+  .ap-navbar-logo  {
+      font-size: 16px;
+      position: relative;
+      left: -101px;
+  }
+
+  .ap-navbar-links  {
+      font-size: 14px;
+  }
+}
+
+  table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    }
+    
+    th {
+    background-color: #2C3E50;
+    color: white;
+    text-transform: uppercase;
+    }
+    
+    tr:nth-child(even) {
+    background-color: #f2f2f2;
+    }
+    
+    tr:hover {
+    background-color: #ddd;
+    transition: 0.3s;
+    }
+    
+    td {
+    font-size: 14px;
+    }
+
+    .ap-fotoleza{
+        display: flex;
+        justify-content: center;
+        height: auto;
+    }
+
+    .ap-teori{
+        text-align: center;
+        font-size: 30px;
+        font-style: italic;
+        margin-top: 10px;
+        color: #fdf5f5;
+        background-color: #474646;
+        display:inline-block;
+        border-radius: 10px;
+        margin-left: 150px;
+    }
+
+    .ap-image {
+        width: 1220px;
+    }
+
+    
+@media (max-width: 1024px) {
+  table {
+      font-size: 0.9rem;
+  }
+  th, td {
+      padding: 10px;
+  }
+  .ap-teori {
+      font-size: 1.2rem;
+      padding: 15px;
+      position: relative;
+      right: 20px;
+  }
+  .ap-image{
+    width: 900px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .ap-tabele {
+      font-size: 0.8rem;
+      position: relative;
+      left: -10px;
+  }
+
+  .ap-fotoleza{
+    justify-content: center;
+  }
+  th, td {
+      padding: 8px;
+  }
+  .ap-teori {
+      font-size: 1rem;
+      padding: 10px;
+      position: relative;
+      left: -93px;
+  }
+
+  .ap-image{
+    width: 700px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .ap-tabele {
+      font-size: 0.7rem;
+      position: relative;
+      left: 20px;
+      top: 10px;
+  }
+  th, td {
+      padding: 6px;
+  }
+  .ap-teori {
+      font-size: 0.9rem;
+      padding: 8px;
+      position: relative;
+      left: -60px;
+  }
+
+  .ap-image{
+    width: 400px;
+  }
+  .ap-fotoleza {
+      width: 100%;
+      border-radius: 5px;
+      position: relative;
+      left: 20px;
+  }
+}

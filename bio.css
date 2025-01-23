@@ -1,0 +1,320 @@
+#ap-body {
+    margin: 0;
+    background: url(papers.co-vx94-simple-architecture-blue-pattern-background-25-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .ap-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #f3e8ff, #e1f0ff);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .ap-navbar-logo {
+    display: flex;
+    justify-content: flex-start;
+   align-items: center;
+  }
+
+  .ap-navbar-logo{
+    position: relative;
+    right: 100px;
+  }
+  
+  .ap-navbar-logo img {
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .ap-navbar-logo a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .ap-navbar-links {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .ap-navbar-links a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #555;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .ap-navbar-links a:hover {
+    background: rgba(0, 0, 0, 0.1);
+    color: #000;
+  }
+  
+  
+  .ap-navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+    left: 110px;
+  }
+
+
+  @media (max-width: 1024px) {
+    .ap-navbar{
+      width: 995px;
+      align-items: center;
+    }
+  
+    
+    
+  
+    .ap-navbar-logo {
+      
+      position: relative;
+      left: -10px;
+    }
+  
+    .ap-navbar-links a {
+      font-size: 17px; 
+      padding: 15px 8px; 
+    }
+  
+    .ap-navbar-links {
+      display: flex;
+      gap: 1px; 
+      position: relative;
+      right: 6px;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .ap-navbar{
+      position: relative;
+      width: 748px;
+    }
+    .ap-navbar-links {
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background: #fff;
+      padding: 10px;
+      z-index: 1;
+      border-radius: 5px;
+      transform: translateY(-200%);
+      opacity: 0;
+      visibility: hidden;
+    }
+  
+    .ap-navbar-links.active {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .ap-navbar-logo{
+      position: relative;
+      left: -251px;
+    }
+  
+    .ap-navbar-toggle {
+      display: block;
+      position: relative;
+      left: -381px;
+
+    }
+  }
+  
+
+  
+  @media (max-width: 480px) {
+    .ap-navbar{
+      position: relative;
+      width: 403px;
+    }
+  
+    .ap-navbar-toggle {
+      display: block;
+      position: relative;
+      left: -231px;
+  
+    }
+    .ap-navbar-logo  {
+        font-size: 16px;
+        position: relative;
+        left: -90px;
+    }
+  
+    .ap-navbar-links  {
+        font-size: 14px;
+    }
+  }
+  
+
+
+  .ap-titulli{font-style: italic;
+    position: relative;
+    top: 20px;
+    left: 210px;
+    font-size: 40px;
+    color: #131313;
+  }
+
+  .ap-paragrafi{
+    background-color: white;
+    display: inline-block;
+    padding: 10px 6px;
+    border-radius: 10px;
+    margin-left: 2px;
+    margin-top: 2px;
+    font-size:x-large;
+    font-style: italic;
+    
+  }
+
+ .ap-lista{
+  background-color: white;
+  display: inline-block;
+  padding: 3px 4px;
+  border-radius: 10px;
+  margin-left: 210px;
+  margin-top: 15px;
+  font-size:larger;
+  font-style: italic;
+
+  }
+
+  
+  .ap-foto{
+    position:absolute;
+    bottom: 195px;
+    right: 150px;
+    
+  }
+
+
+
+
+  @media (max-width: 1024px) {
+    .ap-titulli {
+        font-size: 60px; 
+        text-align: center;
+        margin-top: 40px;
+        max-width: 100%; 
+        position: relative;
+        left: 10px;
+    }
+
+    .ap-paragrafi {
+        font-size: 1.5rem; 
+        max-width: 80%; 
+        margin-top: 20px;
+        text-align: left;
+        line-height: 1.6; 
+    }
+
+    .ap-lista {
+        font-size: 1.5rem;
+        margin-top: 20px;
+        max-width: 80%;
+        margin-left: 130px;
+    }
+
+    .ap-foto {
+        width: 350px; 
+        height: 300px;
+        margin-right: auto;
+        position: relative;
+        left: 620px;
+        top: -209px;
+    }
+}
+
+
+  
+
+  
+
+
+
+@media (max-width: 768px) {
+
+  .ap-titulli{
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }
+  
+
+  .ap-foto {
+      max-width: 50%;
+      position: relative;
+      left: 200px;
+      top: -130px;
+  }
+
+  .ap-paragrafi {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    position: relative;
+    left: -63px;
+}
+
+ .ap-lista {
+    font-size: 0.8rem;
+    padding: 4px 0;
+    position: relative;
+    top: 240px;
+    margin-left: 200px;
+}
+}
+
+@media (max-width: 480px) {
+  .ap-titulli  {
+      font-size: 1.5rem;
+  }
+
+  .ap-paragrafi {
+      font-size: 0.8rem;
+      line-height: 1.4;
+      position: relative;
+      left: 23px;
+  }
+
+  .ap-lista  {
+      font-size: 0.8rem;
+      padding: 4px 0;
+      position: relative;
+      top: 5px;
+      margin-left: 90px;
+  }
+
+  .ap-foto{
+    position: relative;
+    top: 32px;
+    left: 92px;
+  }
+
+  .profile-image {
+      max-width: 80%;
+  }
+}
+
+
+
+
+  
+

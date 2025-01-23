@@ -1,0 +1,360 @@
+#ap-body {
+    margin: 0;
+    background: url(riverr\ side.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .ap-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #f3e8ff, #e1f0ff);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .ap-navbar-logo {
+    display: flex;
+    justify-content: flex-start;
+   align-items: center;
+  }
+
+  .ap-navbar-logo{
+    position: relative;
+    right: 100px;
+  }
+  
+  .ap-navbar-logo img {
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .ap-navbar-logo a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .ap-navbar-links {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .ap-navbar-links a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #555;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .ap-navbar-links a:hover {
+    background: rgba(0, 0, 0, 0.1);
+    color: #000;
+  }
+  
+  
+  .ap-navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+    left: 110px;
+  }
+
+
+  @media (max-width: 1024px) {
+    .ap-navbar{
+      width: 985px;
+      align-items: center;
+    }
+    
+  
+    .ap-navbar-logo {
+      
+      position: relative;
+      left: -10px;
+    }
+  
+    .ap-navbar-links a {
+      font-size: 17px; 
+      padding: 15px 8px; 
+    }
+  
+    .ap-navbar-links {
+      display: flex;
+      gap: 1px; 
+      position: relative;
+      right: 6px;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .ap-navbar{
+      position: relative;
+      width: 748px;
+    }
+    .ap-navbar-links {
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background: #fff;
+      padding: 10px;
+      z-index: 1;
+      border-radius: 5px;
+      transform: translateY(-200%);
+      opacity: 0;
+      visibility: hidden;
+    }
+  
+    .ap-navbar-links.active {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .ap-navbar-logo{
+      position: relative;
+      left: -251px;
+    }
+  
+    .ap-navbar-toggle {
+      display: block;
+      position: relative;
+      left: -381px;
+
+    }
+  }
+  
+
+
+
+   
+  @media (max-width: 480px) {
+    .ap-navbar{
+      position: relative;
+      width: 485px;
+    }
+  
+    .ap-navbar-toggle {
+      display: block;
+      position: relative;
+      left: -265px;
+  
+    }
+    .ap-navbar-logo  {
+        font-size: 16px;
+        position: relative;
+        left: -130px;
+    }
+  
+    .ap-navbar-links  {
+        font-size: 14px;
+    }
+  }
+
+  .ap-titulli3{
+    font-style: italic;
+    position: relative;
+    top: 60px;
+    left: 100px;
+    font-size: 40px;
+    color: #fdfafa;
+} 
+
+.ap-tabelja2{
+    position:relative;
+     left: 850px;
+     top: -260px;
+     width: 530px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 20%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+
+    
+    }
+    
+    th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    }
+    
+    th {
+    background-color: #5aaac5;
+    color: white;
+    text-transform: uppercase;
+    }
+    
+    tr:nth-child(even) {
+    background-color: #f2f2f2;
+    }
+    
+    tr:hover {
+    background-color: #ddd;
+    transition: 0.3s;
+    }
+    
+    td {
+    font-size: 14px;
+}
+ 
+.ap-teori3{
+    background-color: white;
+    display: inline-block;
+    padding: 3px 4px;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-top: 40px;
+    font-size:x-large;
+    font-style: italic;
+    
+}
+
+.ap-cta-button {
+  display: inline-block;
+  background-color: #2833a7;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.ap-cta-button:hover {
+  background-color: #212a88
+  
+  
+}
+
+.ap-buton{
+  position: relative;
+  left: 340px;
+}
+
+
+
+
+
+
+@media (max-width: 1024px) {
+  .ap-titulli3 {
+    position: relative;
+    left: 1px;
+    font-size: 2rem;
+  }
+
+  .ap-teori3 {
+    position: relative;
+    left: -90px;
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  .ap-cta-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    position: relative;
+    left: 160px;
+  }
+
+  .ap-buton{
+    position: relative;
+    left: 3px;
+  }
+
+  .ap-tabelja2{
+    position: relative;
+    left: 480px;
+    top: -210px;
+  
+  }
+}
+
+@media (max-width: 768px) {
+  .ap-titulli3 {
+      font-size: 1.8rem;
+      position: relative;
+      left: 10px;
+      top: -30px;
+  }
+
+  .ap-teori3 {
+      font-size: 0.9rem;
+      position: relative;
+      left: 40px;
+      top: 10px;
+      
+
+  }
+
+  .ap-cta-button {
+      font-size: 0.8rem;
+      padding: 8px 15px;
+      position: relative;
+      left: 290px;
+      top: 20px;
+  }
+
+  .ap-tabelja2 {
+      font-size: 0.9rem;
+      position: relative;
+      left: 90px;
+      top: -329px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ap-titulli3 {
+    font-size: 1.8rem;
+    position: relative;
+    left: 100px;
+    top: 10px;
+}
+
+.ap-teori3 {
+    font-size: 0.9rem;
+    position: relative;
+    left: -20px;
+    top: 60px;
+
+}
+
+.ap-cta-button {
+    font-size: 0.8rem;
+    padding: 8px 15px;
+    position: relative;
+    left: 160px;
+    top: 5px;
+}
+
+.ap-buton{
+  position: relative;
+  left: 10px;
+  top: 80px;
+}
+
+.ap-tabelja2 {
+    font-size: 0.9rem;
+    position: relative;
+    left: -20px;
+    top: -400px;
+}
+}

@@ -1,0 +1,312 @@
+
+#ap-body {
+    margin: 0;
+    background: url(img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #333;
+  }
+  
+  .ap-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #f3e8ff, #e1f0ff);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .ap-navbar-logo {
+    display: flex;
+    justify-content: flex-start;
+   align-items: center;
+  }
+
+  .ap-navbar-logo{
+    position: relative;
+    right: 100px;
+  }
+  
+  .ap-navbar-logo img {
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .ap-navbar-logo a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .ap-navbar-links {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .ap-navbar-links a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #555;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .ap-navbar-links a:hover {
+    background: rgba(0, 0, 0, 0.1);
+    color: #000;
+  }
+  
+  
+  .ap-navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+    left: 110px;
+  }
+
+  @media (max-width: 1024px) {
+    .ap-navbar{
+      width: 985px;
+      align-items: center;
+    }
+    
+  
+    .ap-navbar-logo {
+      
+      position: relative;
+      left: -10px;
+    }
+  
+    .ap-navbar-links a {
+      font-size: 17px; 
+      padding: 15px 8px; 
+    }
+  
+    .ap-navbar-links {
+      display: flex;
+      gap: 1px; 
+      position: relative;
+      right: 6px;
+    }
+  }
+  
+
+ 
+
+  
+  
+  @media (max-width: 768px) {
+    .ap-navbar{
+      position: relative;
+      width: 748px;
+    }
+    .ap-navbar-links {
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background: #fff;
+      padding: 10px;
+      z-index: 1;
+      border-radius: 5px;
+      transform: translateY(-200%);
+      opacity: 0;
+      visibility: hidden;
+    }
+  
+    .ap-navbar-links.active {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .ap-navbar-logo{
+      position: relative;
+      left: -251px;
+    }
+  
+    .ap-navbar-toggle {
+      display: block;
+      position: relative;
+      left: -381px;
+
+    }
+  }
+
+  
+  @media (max-width: 480px) {
+    .ap-navbar{
+      position: relative;
+      width: 403px;
+    }
+  
+    .ap-navbar-toggle {
+      display: block;
+      position: relative;
+      left: -231px;
+  
+    }
+    .ap-navbar-logo  {
+        font-size: 16px;
+        position: relative;
+        left: -90px;
+    }
+  
+    .ap-navbar-links  {
+        font-size: 14px;
+    }
+  }
+  
+
+
+  .ap-permbajtja {
+    position: relative;
+    left: 100px;
+    top: 100px;
+}
+
+.ap-titulli {
+    font-style: italic;
+    font-size: 100px;
+    color: rgb(76, 73, 73);
+}
+
+.ap-paragrafi {
+    font-style: italic;
+    font-size: large;
+    color: #848181;
+    position: relative;
+    top: -40px;
+}
+
+.ap-card {
+    position: absolute;
+    left: 70%;
+    top: 33%;
+    background-color: #fff;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    filter: grayscale(100%);
+}
+
+.ap-card img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.ap-card:hover {
+    background-color: rgb(177, 226, 243);
+    filter: grayscale(0);
+}
+
+.ap-card:hover img {
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.4);
+}
+
+@media (max-width: 1024px) {
+  
+  .ap-permbajtja {
+      max-width: 100%;
+      padding: 40px;
+      position: relative;
+      top: 20px;
+      left: 2px;
+      
+      
+  }
+
+  
+  .ap-titulli {
+      font-size: 80px; 
+  }
+
+  
+  .ap-paragrafi {
+      font-size: 1rem; 
+      background-color: #dce2f6;
+      display: inline-block;
+      padding: 7px;
+      color: #000;
+      border-radius:7px ;
+  }
+
+  
+  .ap-card {
+      width: 30%; 
+      max-width: 240px; 
+      height: 250px; 
+      
+  }
+
+  
+  .ap-card img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+  }
+}
+
+
+@media  (max-width: 768px) {
+    .ap-permbajtja {
+        left: 20px;
+        top: 50px;
+    }
+
+    .ap-titulli {
+        font-size: 50px;
+    }
+
+    .ap-paragrafi {
+        font-size: medium;
+        top: 0;
+    }
+
+    .ap-card {
+        position: relative;
+        left: 160px;
+        top: -175px;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ap-permbajtja {
+        left: -30px;
+        top: 30px;
+    }
+
+    .ap-titulli {
+        font-size: 30px;
+    }
+
+    .ap-paragrafi {
+        font-size: small;
+        top: 0;
+    }
+
+    
+
+    .ap-card {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        left: 160px;
+        top: -155px;
+    }
+}

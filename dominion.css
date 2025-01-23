@@ -1,0 +1,332 @@
+
+#ap-body {
+    margin: 0;
+    background-color: rgb(51, 80, 117);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .ap-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #f3e8ff, #e1f0ff);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .ap-navbar-logo {
+    display: flex;
+    justify-content: flex-start;
+   align-items: center;
+  }
+
+  .ap-navbar-logo{
+    position: relative;
+    right: 100px;
+  }
+  
+  .ap-navbar-logo img {
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .ap-navbar-logo a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .ap-navbar-links {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .ap-navbar-links a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #555;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .ap-navbar-links a:hover {
+    background: rgba(0, 0, 0, 0.1);
+    color: #000;
+  }
+  
+  
+  .ap-navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+    left: 110px;
+  }
+
+
+  @media (max-width: 1024px) {
+    .ap-navbar{
+      width: 985px;
+      align-items: center;
+    }
+    
+  
+    .ap-navbar-logo {
+      
+      position: relative;
+      left: -10px;
+    }
+  
+    .ap-navbar-links a {
+      font-size: 17px;
+      padding: 15px 8px; 
+    }
+  
+    .ap-navbar-links {
+      display: flex;
+      gap: 1px; 
+      position: relative;
+      right: 6px;
+    }
+  }
+  
+   
+  @media (max-width: 768px) {
+    .ap-navbar {
+      position: relative;
+      width: 748px;
+    }
+    .ap-navbar-links {
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background: #fff;
+      padding: 10px;
+      z-index: 1;
+      border-radius: 5px;
+      transform: translateY(-200%);
+      opacity: 0;
+      visibility: hidden;
+    }
+  
+    .ap-navbar-links.active {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .ap-navbar-logo{
+      position: relative;
+      left: -251px;
+    }
+  
+    .ap-navbar-toggle {
+      display: block;
+      position: relative;
+      left: -381px;
+
+    }
+  }
+  
+
+  
+@media (max-width: 480px) {
+  .ap-navbar{
+    position: relative;
+    width: 403px;
+  }
+
+  .ap-navbar-toggle {
+    display: block;
+    position: relative;
+    left: -231px;
+
+  }
+  .ap-navbar-logo  {
+      font-size: 16px;
+      position: relative;
+      left: -90px;
+  }
+
+  .ap-navbar-links  {
+      font-size: 14px;
+  }
+}
+
+
+  .ap-titulli{
+    font-style: italic;
+    text-align: center; 
+      margin: 10px auto; 
+      padding: 8px 0; 
+    font-size:27px;
+    color: #fdfafa;
+  } 
+
+   .ap-teori{
+    background-color: white;
+    display: inline-block;
+    padding: 3px 4px;
+    border-radius: 10px;
+    margin-left: 93px;
+    margin-top: 15px;
+    font-size:x-large;
+    font-style: italic;
+    
+  }
+
+  .ap-dominionfoto{
+  display: flex;
+  justify-content: center;
+  height: auto;
+  position: relative;
+  top: -120px;
+  left: -2px;
+  }
+
+  .ap-image {
+  width: 380px;
+
+  
+  }
+
+
+
+
+  .ap-lista{
+    background-color: white;
+    display: inline-block;
+    padding: 3px 4px;
+    border-radius: 10px;
+    margin-left: 950px;
+    margin-top: -350px;
+    font-size:x-large;
+    font-style: italic;
+    
+  }
+
+
+  @media (max-width: 1024px) {
+    .ap-titulli {
+      font-size: 2.5rem; 
+    }
+  
+    .ap-teori {
+      font-size: 1.2rem;
+      width: 30%; 
+      margin-left: 30px;
+    }
+
+
+    .ap-dominionfoto{
+      position: relative;
+      left: -15px;
+      top: -130px;
+    }
+
+    .ap-image{
+      width: 300px;
+    }
+  
+    .ap-lista {
+      font-size: 1.1rem;
+      width: 30%;
+      position: relative;
+      top: -60px;
+      margin-left: 650px;
+   }
+  }
+
+ 
+
+  
+  @media (max-width: 768px) {
+    .ap-titulli {
+      font-size: 22px; 
+      text-align:center; 
+      margin: 10px auto; 
+      padding: 8px 0; 
+    }
+    .ap-teori {
+      font-size: medium;
+      margin: 15px auto;
+      padding: 11px;
+      position: relative;
+      left: 20px;
+      width: 280px;
+    }
+
+    .ap-image {
+      max-width: 70%;
+    
+    }
+
+    .ap-dominionfoto{
+      display: flex;
+      justify-content:center;
+      height: auto;
+      position: relative;
+      top: 10px;
+      left: -43px;
+
+    }
+
+    .ap-lista {
+      font-size: medium;
+      margin: 33px auto;
+      position: relative;
+      left: 400px;
+      top: -510px;
+    }
+
+  }
+
+  @media (max-width: 480px) {
+    .ap-titulli {
+      font-size: 22px; 
+      text-align:center; 
+      margin: 10px auto; 
+      padding: 8px 0; 
+    }
+    .ap-teori {
+      font-size: medium;
+      margin: 15px auto;
+      padding: 11px;
+      position: relative;
+      left: 45px;
+    }
+
+    .ap-image {
+      max-width: 70%;
+    
+    }
+
+    .ap-dominionfoto{
+      display: flex;
+      justify-content:center;
+      height: auto;
+      position: relative;
+      top: 10px;
+      left: 10px;
+
+    }
+
+    .ap-lista {
+      font-size: medium;
+      margin: 33px auto;
+      position: relative;
+      left: 35px;
+      top: 20px;
+      width: 320px;
+    }
+
+  }
